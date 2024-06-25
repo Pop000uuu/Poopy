@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>QNB Rental</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="myFunctions.js"></script>  
+    <link rel="details" href="details.html">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">الصفحة الرئيسية</a></li>
+                <li><a href="aboutus.html">من نحن</a></li>
+                <li><a href="properties.html">العقارات</a></li>
+            </ul>
+        </nav>
+        <h1>مكتب لتأجير العقارات</h1>
+    </header> 
+    <table>   
+    <thead>
+        <tr>
+            <th> المكان</th>
+            <th>التفاصيل</th>
+            <th>مساحة العقار </th>
+            <th> أظهار التفاصيل </th>
+            <th>الأختيار </th>
+
+        </tr>
+    </thead>
+    <tr>
+        <td>دمشق</td>
+        <td>محل مساحة 50م</td>
+        <td>500000 ل.س</td>
+        <td><button onclick="toggleDetails(this)"> <input type="checkbox"></button></td>
+        <td><input type="radio" name="property" value="دمشق - محل مساحة 50م"></td>
+</tr>
+    <tr class="details" style="display: none;">
+        <td colspan="4">
+            
+            <li name="aria"> المنطقة:  برامكة   </li>
+            <li name="gar">  يوجد مستودع  </li>
+            <li name="flppr"> الطابق: أرضي </li>
+            <li name="blkon">  مساحةالمستودع 20  </li>
+            <li name="stuf"> واجهة سكوريت </li>
+            <li name="haveingType"> الملكية:  طابو </li>
+            <div>
+                <img src="1.jpg" alt="">
+                <img src="11.jpg" alt="">
+               
+            </div>
+        </td>
+    </tr> <tr>
+        <td>حلب</td>
+        <td>شقة غرفة وصالة مساحة 150م</td>
+        <td>15500000 ل.س</td>
+        <td><button onclick="toggleDetails(this)"> <input type="checkbox"> </button></td>
+    <td> <input type="radio" name="property"></td>
+</tr>
+    <tr class="details" style="display: none;">
+        <td colspan="4">
+            
+            <li name="aria"> المنطقة:  الباب   </li>
+            <li name="gar"> متوفر كراج: يوجد </li>
+            <li name="flppr"> الطابق:  </li>
+            <li name="blkon"> مساحة بلكون : 15م </li>
+            <li name="stuf"> مفروشة:نعم </li>
+            <li name="haveingType"> الملكية: طابو </li>
+            <div>
+                <img src="2.jpg" alt="">
+                <img src="12.jpg" alt="">
+               
+            </div>
+        </td>
+    </tr> <tr>
+        <td>دمشق</td>
+        <td>شقة اربع غرف وصالة مساحة 160م</td>
+        <td>225000000 ل.س</td>
+        <td><button onclick="toggleDetails(this)"> <input type="checkbox"> </button></td>
+    <td> <input  type="radio"name="property"></td>
+</tr>
+    <tr class="details" style="display: none;">
+        <td colspan="4">
+            
+            <li name="aria"> المنطقة:  المزة   </li>
+            <li name="gar"> متوفر كراج: يوجد </li>
+            <li name="flppr"> الطابق: الثاني </li>
+            <li name="blkon"> مساحة بلكون : 10م </li>
+            <li name="stuf"> مفروشة: نعم </li>
+            <li name="haveingType"> الملكية: طابو </li>
+            <div>
+                <img src="3.jpg" alt="">
+                <img src="13.jpg" alt="">
+               
+            </div>
+        </td>
+    </tr> <tr>
+        <td>حمص </td>
+        <td>  بيت عربي مساحة 100م</td>
+        <td>800000 ل.س</td>
+        <td><button onclick="toggleDetails(this)"> <input type="checkbox"> </button></td>
+    <td> <input id="rrbtn" type="radio"></td>
+</tr>
+    <tr class="details" style="display: none;">
+        <td colspan="4">
+            
+            <li name="aria"> المنطقة:  تدمر   </li>
+            <li name="gar"> متوفر كراج: يوجد </li>
+            <li name="flppr"> الطابق: أرضي </li>
+            <li name="blkon"> مساحة بلكون : 15م </li>
+            <li name="stuf"> مفروشة: نعم </li>
+            <li name="haveingType"> الملكية: طابو </li>
+            <div>
+                <img src="4.jpg" alt="">
+                <img src="14.jpg" alt="">
+               
+            </div>
+        </td>
+    </tr> <tr>
+        <td>دمشق</td>
+        <td>شقة غرفتين وصالة مساحة 90م</td>
+        <td>1200000 ل.س</td>
+        <td><button onclick="toggleDetails(this)"> <input type="checkbox"> </button></td>
+    <td> <input  id="rrbtn" type="radio"></td>
+</tr>
+    <tr class="details" style="display: none;">
+        <td colspan="4">
+            
+            <li name="aria"> المنطقة:  ركن الدين    </li>
+            <li name="gar"> متوفر كراج: يوجد </li>
+            <li name="flppr"> الطابق: الثالث </li>
+            <li name="blkon"> مساحة بلكون : 10م </li>
+            <li name="stuf"> مفروشة: لا </li>
+            <li name="haveingType"> الملكية: طابو </li>
+            <div>
+                <img src="5.jpg" alt="">
+                <img src="15.jpg" alt="">
+               
+            </div>
+        </td>
+    </tr> <tr>
+        <td>دمشق</td>
+        <td>شقة ثلاث غرف وصالة مساحة 100م</td>
+        <td>1000000 ل.س</td>
+        <td><button onclick="toggleDetails(this)"> <input type="checkbox"> </button></td>
+    <td> <input  type="radio"name="property"></td>
+</tr>
+    <tr class="details" style="display: none;">
+        <td colspan="4">
+            
+            <li name="aria"> المنطقة:  المالكي   </li>
+            <li name="gar"> متوفر كراج: يوجد </li>
+            <li name="flppr"> الطابق: الخامس </li>
+            <li name="blkon"> مساحة بلكون : 10م </li>
+            <li name="stuf"> مفروشة: نعم </li>
+            <li name="haveingType"> الملكية: طابو </li>
+            <div>
+                <img src="6.jpg" alt="">
+                <img src="16.jpg" alt="">
+               
+            </div>
+        </td>
+    </tr> <tr>
+        <td>درعا</td>
+        <td>  بيت عربي مساحة 180م</td>
+        <td>500000 ل.س</td>
+        <td><button onclick="toggleDetails(this)"> <input type="checkbox"> </button></td>
+    <td> <input   type="radio" name="property"></td>
+</tr>
+    <tr class="details" style="display: none;">
+        <td colspan="4">
+            
+            <li name="aria"> المنطقة:  نوى   </li>
+            <li name="gar"> متوفر : حديقة خارجية </li>
+            <li name="flppr"> الطابق: الأرضي </li>
+            <li name="blkon">  تراس خاجي :  </li>
+            <li name="stuf"> مفروشة: نعم </li>
+            <li name="haveingType"> الملكية: طابو </li>
+            <div>
+                <img src="7.jpg" alt="">
+                <img src="17.jpg" alt="">
+               
+            </div>
+        </td>
+    </tr> <tr>
+        <td>دمشق</td>
+        <td>شقة غرفتين وصالة مساحة 90م</td>
+        <td>300000 ل.س</td>
+        <td><button onclick="toggleDetails(this)"> <input type="checkbox"> </button></td>
+    <td> <input  type="radio"name="property"></td>
+</tr>
+    <tr class="details" style="display: none;">
+        <td colspan="4">
+            
+            <li name="aria"> المنطقة:  بلودان   </li>
+            <li name="gar"> متوفر كراج: يوجد </li>
+            <li name="flppr"> الطابق: الثاني </li>
+            <li name="blkon"> مساحة بلكون : 15م </li>
+            <li name="stuf"> مفروشة: لا </li>
+            <li name="haveingType"> الملكية: طابو </li>
+            <div>
+                <img src="8.jpg" alt="">
+                <img src="18.jpg" alt="">
+               
+            </div>
+        </td>
+    </tr> <tr>
+        <td>دمشق</td>
+        <td>  مستودع مساحة 200م</td>
+        <td>1000000 ل.س</td>
+        <td><button onclick="toggleDetails(this)"> <input type="checkbox"> </button></td>
+    <td> <input type="radio" name="property"></td> <script>
+        
+    
+
+
+        
+    </script>
+</tr>
+    <tr class="details" style="display: none;">
+        <td colspan="4">
+            
+            <li name="aria"> المنطقة:  عدرا الصناعية   </li>
+            <li name="gar"> متوفر كراج: يوجد </li>
+            <li name="flppr"> الطابق: ارضي </li>
+            <li name="blkon">   غرفة حراسة </li>
+            <li name="stuf"> مفروشة: غرفة الحراسة </li>
+            <li name="haveingType"> الملكية: طابو </li>
+            <div>
+                <img src="9.jpg" alt="">
+                <img src="19.jpg" alt="">
+               
+            </div>
+        </td>
+    </tr> <tr>
+        <td>دمشق</td>
+        <td>شقة ثلاث غرف وصالة مساحة 100م</td>
+        <td>300000 ل.س</td>
+        <td><button onclick="toggleDetails(this)"> <input type="checkbox"> </button></td>
+    <td> <input   type="radio" name="property"></td>
+</tr>
+    <tr class="details" style="display: none;">
+        <td colspan="4">
+            
+            <li name="aria"> المنطقة:  ببيلا   </li>
+            <li name="gar"> متوفر كراج: لا يوجد </li>
+            <li name="flppr"> الطابق: رابع </li>
+            <li name="blkon"> مساحة بلكون : 10م </li>
+            <li name="stuf"> مفروشة: لا </li>
+            <li name="haveingType"> الملكية: طابو </li>
+            <div>
+                <img src="10.jpg" alt="">
+                <img src="20.jpg" alt="">
+               
+            </div>
+        </td>
+    </tr> 
+</td></tr></tbody>
+</table>
+    </main>
+    
+    <button id="follow-button"onclick="showRequestForm()" style="width: 150px; height:35px;padding: auto; background-color: cadetblue ;font-size: x-large ;margin-right: 50px;border-radius: 20px ; ">متابعه</button></a>
+
+    <br>
+    <br> 
+
+    
+
+
+    <div id="request-form" style="display: none;">
+        <form id="request-form-fields" onsubmit="submitRequest()">
+            <div class="form-row">
+                <label for="fullname">الاسم الكامل:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="الاسم الكامل بالعربية">
+            </div>
+    
+            <div class="form-row">
+                <label for="national-id">الرقم الوطني:</label>
+                <input type="text" id="national-id" name="national-id" pattern="[0-9]{11}" placeholder="XXXXXXXXXXX" required>
+            </div>
+            
+    
+            <div class="form-row">
+                <label for="birthdate">تاريخ الولادة:</label>
+                <input type="date" id="birthdate" name="birthdate">
+            </div>
+   
+            <div class="form-row">
+                <label for="mobile">رقم الموبايل:</label>
+                <input type="tel" id="mobile" name="mobile" pattern="09[0-9]{8}" placeholder="09XXXXXXXXX">
+            </div>
+    
+            <div class="form-row">
+                <label for="email">البريد الإلكتروني:</label>
+                <input type="email" id="email" name="email" placeholder="example@example.com">
+            </div>
+            <div class=" form-row">
+                <label for="verification"><b> please enter the captcha code </b></label>
+                <input type="text" id="txtCaptcha" style="text-align: center; border: none; font-weight: bold; font-size: 20px; font-family: Modern"  />  
+                <input type="text" id="txtCompare" required/> 
+                <input type="button" id="btnrefresh" value="تحديث" onclick="Captcha();" />  
+           
+            </div>
+    
+            <button type="button" onclick="submitRequest(event)">ارسال</button>
+
+        </form>
+        <div id="result-message"></div>
+
+    </div>
+
+    
+    
+    
+</body>
+<script src="./myFunctions.js"></script>
+</html>
